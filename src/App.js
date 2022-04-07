@@ -4,6 +4,7 @@ import AppBar from "./components/AppBar";
 import HomeView from "./views/HomeView";
 import SignInView from "./views/SignInView";
 import SignUpView from "./views/SignUpView";
+import UserView from "./views/UserView";
 import ErrorView from "./views/ErrorView";
 
 function App() {
@@ -13,8 +14,9 @@ function App() {
       <Container>
         <Routes>
           <Route path="/" element={<HomeView />} />
-          <Route path="/signin" element={<SignInView />} />
-          <Route path="/signup" element={<SignUpView />} />
+          <Route path="/sign-in" element={<SignInView />} />
+          <Route path="/sign-up" element={<SignUpView />} />
+          <Route path="/user" element={<UserView />} />
           <Route path="*" element={<ErrorView />} />
         </Routes>
       </Container>

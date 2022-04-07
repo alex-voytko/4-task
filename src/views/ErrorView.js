@@ -1,5 +1,5 @@
 function ErrorView() {
-  return;
+  return <h1>Sorry, wrong page</h1>;
 }
 
 export default ErrorView;
